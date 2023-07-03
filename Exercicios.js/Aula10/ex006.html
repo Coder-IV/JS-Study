@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(0, 255, 0);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var mouse_function = window.document.getElementById('area')
+        mouse_function.addEventListener('click', clicar)
+        mouse_function.addEventListener('mouseenter', entrar)
+        mouse_function.addEventListener('mouseout', sair)
+
+        function clicar() {
+            mouse_function.innerText = 'Clicou!'
+            mouse_function.style.background = 'red'
+        }
+        function entrar() {
+            mouse_function.innerText = 'Entrou!'
+        }
+        function sair() {
+            mouse_function.innerText = 'Saiu!'
+            mouse_function.style.background = '#00ff00'
+        }
+
+
+
+        function alerta() {
+            let pass = window.prompt('coloque uma senha')
+            let npass = window.prompt('qual a senha?')
+            let result;
+            if (npass == pass) {
+                result = 'certo';
+            } else {
+                result = 'errado';
+            }
+            return result;
+        }
+
+        window.alert(alerta())
+    </script>
+
+</body>
+
+</html>
