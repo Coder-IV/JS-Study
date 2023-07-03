@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de estrangeiro</title>
+</head>
+
+<body>
+    <h1>Verificador de estrangeiro</h1>
+    <p>Qual seu pais de origem?</p>
+    <input type="text" name="txte" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            let pais = window.document.querySelector('input#pais').value;
+            let res = window.document.querySelector('div#res')
+            if (pais.toLowerCase() === 'brasil' || pais.toLowerCase() === 'brazil') {
+                res.innerHTML = 'Você é Brasileiro!<br>'
+            } else {
+                res.innerHTML = 'Você é estrangeiro!<br>'
+            }
+        }
+    </script>
+</body>
+
+</html>
