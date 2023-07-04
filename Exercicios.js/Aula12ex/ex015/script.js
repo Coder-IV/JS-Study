@@ -1,12 +1,14 @@
 function verificar() {
     let ano = window.document.querySelector('input#txtano').value
     let msg = window.document.querySelector('div#msg')
-    let foto = window.document.querySelector('img#foto')
+    let foto = window.document.createElement('img')
     let sexo = document.getElementsByName('sexo')
     let date = new Date()
     let AnoAtual = date.getFullYear()
     let idade = AnoAtual - ano
     let genero = ''
+
+    foto.classList.add('imagem')
 
     if (ano.length == 0 || isNaN(ano) || ano > AnoAtual || idade > 120) {
         window.alert('[ERROR] Verifique os dados e tente novamente!')
@@ -44,7 +46,7 @@ function verificar() {
     } else if (idade < 18 && genero === 'homem') {
 
         // adolescente masculino
-
+        img
         msg.innerHTML = `Detectamos um adolescente de <strong>${idade}</strong> anos!`
         foto.src = 'imagens/adolescente-m.png'
     } else if (idade < 18 && genero === 'mulher') {
@@ -78,4 +80,6 @@ function verificar() {
         msg.innerHTML = `Detectamos uma ${genero} de <strong>${idade}</strong> anos!`
         foto.src = 'imagens/idosa.png'
     }
+
+    msg.appendChild(foto)
 }
