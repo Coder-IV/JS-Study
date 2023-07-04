@@ -1,13 +1,13 @@
 function verificar(){
     let ano = window.document.querySelector('input#txtano').value
     let msg = window.document.querySelector('div#msg')
-    let sexo = null//a ser adicionado
+    let sexo = null//a ser declarado
     let data = new Date()
     let yAtual = data.getFullYear()
     let idade = yAtual - ano
-    if (idade >= 0 && idade < 4 && sexo = 'masculino') {
+    if (idade >= 0 && idade < 4 && sexo == 'masculino') {
         msg.innerHTML = `Detectamos um bebe de ${idade} anos!`
-    } else if (idade >= 0 && idade < 4 && sexo = 'feminino') {
+    } else if (idade >= 0 && idade < 4 && sexo == 'feminino') {
         msg.innerHTML = `Detectamos um bebe de ${idade} anos!`
     } else if (idade < 10) {
         // crianca

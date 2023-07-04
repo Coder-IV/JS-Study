@@ -19,7 +19,14 @@
                 Ano de Nascimento: <input type="number" name="txtano" id="txtano">
             </p>
             <p>
-                <strong>Sexo:</strong> <!——input type radio | usar label apos input | 1 input deve ter o checked——>
+                <strong>Sexo:</strong>
+                <input type="radio" name="masculino" id="masc" checked> 
+                Masculino 
+                <label for="masc"></label>
+
+                <input type="radio" name="faminino" id="femi">
+                Feminino
+                <label for="fami"></label>
             </p>
             <p>
                 <input type="button" value="Verificar" onclick="verificar()">
@@ -29,7 +36,7 @@
             Preencha os dados acima para ver o resultado!
         </div>
         <div id="foto">
-            <img src="" alt="">
+            <img src="" alt="Foto de um humano.">
         </div>
     </section>
     <footer>
