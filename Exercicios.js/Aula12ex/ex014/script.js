@@ -5,7 +5,7 @@ function carregar() {
     let bodybg = window.document.body.style
     let saudacao = window.document.querySelector('div#saudacao')
     let data = new Date()
-    let hora = 16 //data.getHours()
+    let hora = data.getHours()
     msg.innerHTML = `Agora são <strong>${hora}</strong> horas`
     if (hora < 6 && hora > 0) {
         saudacao.innerHTML = '<strong>Boa Madrugada!</strong>'
