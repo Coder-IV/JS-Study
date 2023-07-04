@@ -24,61 +24,61 @@ function verificar() {
         // bebe masculino
 
         msg.innerHTML = `Detectamos um bebê de <strong>${idade}</strong> anos!`
-        foto.src = 'imagens/bebe-m.png'
+        foto.setAttribute('src', 'imagens/bebe-m.png')
     } else if (idade >= 0 && idade < 4 && genero === 'mulher') {
 
         // bebe feminino
 
         msg.innerHTML = `Detectamos um bebê de <strong>${idade}</strong> anos!`
-        foto.src = 'imagens/bebe-f.png'
+        foto.setAttribute('src', 'imagens/bebe-f.png')
     } else if (idade < 11 && genero === 'homem') {
 
         // criança masculino
 
         msg.innerHTML = `Detectamos uma criança de <strong>${idade}</strong> anos!`
-        foto.src = 'imagens/crianca-m.png'
+        foto.setAttribute('src', 'imagens/crianca-m.png')
     } else if (idade < 11 && genero === 'mulher') {
 
         // criança feminino
 
         msg.innerHTML = `Detectamos uma criança de <strong>${idade}</strong> anos!`
-        foto.src = 'imagens/crianca-f.png'
+        foto.setAttribute('src', 'imagens/crianca-f.png')
     } else if (idade < 18 && genero === 'homem') {
 
         // adolescente masculino
-        img
+        
         msg.innerHTML = `Detectamos um adolescente de <strong>${idade}</strong> anos!`
-        foto.src = 'imagens/adolescente-m.png'
+        foto.setAttribute('src', 'imagens/adolescente-m.png')
     } else if (idade < 18 && genero === 'mulher') {
 
         // adolescente feminino
 
         msg.innerHTML = `Detectamos uma adolecente de <strong>${idade}</strong> anos!`
-        foto.src = 'imagens/adolescente-f.png'
+        foto.setAttribute('src', 'imagens/adolescente-f.png')
     } else if (idade < 60 && genero === 'homem') {
 
         // adulto masculino
 
         msg.innerHTML = `Detectamos um ${genero} de <strong>${idade}</strong> anos!`
-        foto.src = 'imagens/homem.png'
+        foto.setAttribute('src', 'imagens/homem.png')
     } else if (idade < 60 && genero === 'mulher') {
 
         // adulto feminino
 
         msg.innerHTML = `Detectamos uma ${genero} de <strong>${idade}</strong> anos!`
-        foto.src = 'imagens/mulher.png'
+        foto.setAttribute('src', 'imagens/mulher.png')
     } else if (idade < 121 && genero === 'homem') {
 
         // idoso
 
         msg.innerHTML = `Detectamos um ${genero} de <strong>${idade}</strong> anos!`
-        foto.src = 'imagens/idoso.png'
+        foto.setAttribute('src', 'imagens/idoso.png')
     } else if (idade < 121 && genero === 'mulher') {
 
         // idosa
 
         msg.innerHTML = `Detectamos uma ${genero} de <strong>${idade}</strong> anos!`
-        foto.src = 'imagens/idosa.png'
+        foto.setAttribute('src', 'imagens/idosa.png')
     }
 
     msg.appendChild(foto)
