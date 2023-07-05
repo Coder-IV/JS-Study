@@ -9,27 +9,27 @@ function carregar() {
     msg.innerHTML = `Agora são <strong>${hora}</strong> horas`
     if (hora < 6 && hora > 0) {
         saudacao.innerHTML = '<strong>Boa Madrugada!</strong>'
-        img.src = 'noite.png'
+        img.src = 'imagens/noite.png'
         bodybg.backgroundColor = '#000307'
         bg.style.backgroundColor = '#080813'
         bg.style.color = 'white'
     } else if (hora < 12) {
         saudacao.innerHTML= '<strong>Bom Dia!</strong>'
-        img.src = 'manha.png'
-        bodybg.backgroundColor = '#cacfea'//#ebd9c0
+        img.src = 'imagens/manha.png'
+        bodybg.backgroundColor = '#cacfea'
         bg.style.backgroundColor = '#d3d5e0'
         bg.style.color = '#f6f6f6'
         bodybg.color = 'black'
     } else if (hora < 19) {
         saudacao.innerHTML = 'Boa Tarde'
-        img.src = 'tarde.png'
+        img.src = 'imagens/tarde.png'
         bodybg.backgroundColor = '#ebd9c0'
         bodybg.color = 'black'
         bg.style.backgroundColor = '#ece3d6'
         bg.style.color = 'gray'
     } else {
         saudacao.innerHTML = '<strong>Boa Noite!</strong>'
-        img.src = 'noite.png'
+        img.src = 'imagens/noite.png'
         bodybg.backgroundColor = '#000307'
         bg.style.backgroundColor = '#080813'
         bg.style.color = 'white'
