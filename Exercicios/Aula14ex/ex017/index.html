@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Modelo de Exercicio</title>
+    <title>Tabuada</title>
 </head>
 <body>
     
     <header>
         <h1>
-            Super contador
+            Tabuada
         </h1>
     </header>
     <section>
-        <div id="msg">
-            
+        <div>
+            <p>
+                Numero: <input type="number" name="numero" id="numero"><input type="button" value="Gerar Tabuada" onclick="contando()">
+            </p>
         </div>
-        <div id="foto">
-            <img src="" alt="">
+        <div id="res">
+            <select name="tabuada" id="tabuada" size="10">
+                <option value="opçao">Selecione um numero e clique em gerar tabuada</option>
+            </select>
         </div>
     </section>
     <footer>
