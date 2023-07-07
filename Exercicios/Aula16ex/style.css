@@ -29,6 +29,18 @@ p#p {
     font-weight: 600;
 }
 
+div#nums {
+    background-color: white;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    width: 220px;
+    height: auto;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: -10px;
+}
+
 input#numero {
     border-radius: 20px;
     font-size: larger;
@@ -53,6 +65,10 @@ section {
     height: 35px;
     color: white;
     background-color: #0031b7;
+}
+
+input#bot {
+    margin-top: -20px;
 }
 
 p#res {

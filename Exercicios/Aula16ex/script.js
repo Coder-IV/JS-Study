@@ -5,9 +5,11 @@ function limitarDigitos(input) {
 }
 
 const elementoAlerta = document.querySelector('div#alert')
-const nums = document.querySelector('select#nums')
+const nums = document.querySelector('div#nums')
 const res = document.querySelector('p#res')
+//const item = document.createElement('p')
 let arr = []
+
 
 function add() {
     const numero = document.querySelector('input#numero').value.trim()
@@ -23,9 +25,8 @@ function add() {
         if (test == -1) {
             res.innerHTML = ``
             arr.push(Number(numero))
-            const item = document.createElement('option')
-            item.text = `Valor ${Number(numero)} adicionado.`
-            nums.appendChild(item)
+            //item.text = `Valor ${Number(numero)} adicionado.`
+            nums.innerHTML += `Número ${Number(numero)} adicionado.<br>`
         } else {
             elementoAlerta.innerHTML = `<br>
             O número ${Number(numero)} já foi adicionado! <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
