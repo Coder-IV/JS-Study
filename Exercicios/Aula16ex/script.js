@@ -14,7 +14,7 @@ function add() {
     const test = arr.indexOf(Number(numero))
     if (isNaN(Number(numero)) || numero === '') {
         elementoAlerta.innerHTML = `<br>
-        Por Favor, adicione um número antes de clicar em: Adicionar <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
+        Por Favor, coloque um número valido antes de clicar em: Adicionar <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
     } else if (Number(numero) < 1 || Number(numero) > 100) {
         elementoAlerta.innerHTML = `<br>
         O número não é valido! Por Favor adicione somente números entre 1 e 100 <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
@@ -54,10 +54,18 @@ function finalizar() {
             soma += arr[c]
         }
         const media = soma / arr.length
-        res.innerHTML = `<br>Ao todo, temos ${arr.length} números cadastrados.`
-        res.innerHTML += `<br><br>O maior valor informado foi ${arr[maiorNum]}.`
-        res.innerHTML += `<br><br>O Menor valor informado foi ${arr[0]}`
-        res.innerHTML += `<br><br>Somando todos os valores, temos ${soma}`
-        res.innerHTML += `<br><br>A média dos valores, digitados é ${media.toFixed(0)}<br><br>`
+        if (arr.length == 1) {
+            res.innerHTML = `<br>Ao todo, temos ${arr.length} número cadastrados.`
+            res.innerHTML += `<br><br>O maior valor informado foi ${arr[maiorNum]}.`
+            res.innerHTML += `<br><br>O Menor valor informado foi ${arr[0]}`
+            res.innerHTML += `<br><br>Somando todos os valores, temos ${soma}`
+            res.innerHTML += `<br><br>A média dos valores, digitados é ${media.toFixed(0)}<br><br>`
+        } else {
+            res.innerHTML = `<br>Ao todo, temos ${arr.length} números cadastrados.`
+            res.innerHTML += `<br><br>O maior valor informado foi ${arr[maiorNum]}.`
+            res.innerHTML += `<br><br>O Menor valor informado foi ${arr[0]}`
+            res.innerHTML += `<br><br>Somando todos os valores, temos ${soma}`
+            res.innerHTML += `<br><br>A média dos valores, digitados é ${media.toFixed(0)}<br><br>`
+        }
     }
 }
