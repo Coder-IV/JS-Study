@@ -23,7 +23,7 @@ function add() {
 
 function finalizar() {
     if (arr.length == 0) {
-        window.aler('Por Favor, adicione um ou mais numeros!')
+        window.alert('Por Favor, adicione um ou mais numeros!')
     } else {
         function compareNumbers(a, b) {
             return a - b;
@@ -40,10 +40,12 @@ function finalizar() {
             soma += arr[c]
         }
 
+        let media = soma / arr.length
+
         res.innerHTML = `Ao todo, temos ${arr.length} números cadastrados.`
         res.innerHTML += `<br><br>O maior valor informado foi ${arr[maiorNum]}.`
         res.innerHTML += `<br><br>O Menor valor informado foi ${arr[0]}`
         res.innerHTML += `<br><br>Somando todos os valores, temos ${soma}`
-        res.innerHTML += `<br><br>A média dos valores, digitados é ${soma / arr.length}`
+        res.innerHTML += `<br><br>A média dos valores, digitados é ${media.toFixed(0)}`
     }
 }
