@@ -7,7 +7,7 @@ function limitarDigitos(input) {
 const elementoAlerta = document.querySelector('div#alert')
 const nums = document.querySelector('div#nums')
 const res = document.querySelector('p#res')
-//const item = document.createElement('p')
+const limp = document.querySelector('div#limp')
 let arr = []
 
 
@@ -25,13 +25,19 @@ function add() {
         if (test == -1) {
             res.innerHTML = ``
             arr.push(Number(numero))
-            //item.text = `Valor ${Number(numero)} adicionado.`
             nums.innerHTML += `Número ${Number(numero)} adicionado.<br>`
+            limp.innerHTML = `<input type="button" value="Limpar" onclick="limpar()" class="botao" id="fixNb">`
         } else {
             elementoAlerta.innerHTML = `<br>
             O número ${Number(numero)} já foi adicionado! <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
         }
     }
+}
+
+function limpar() {
+    arr = []
+    nums.innerHTML = `Números:<br>`
+    limp.innerHTML = ``
 }
 
 function fecharAlerta() {
@@ -66,7 +72,7 @@ function finalizar() {
             res.innerHTML += `<br><br>O maior valor informado foi ${arr[maiorNum]}.`
             res.innerHTML += `<br><br>O Menor valor informado foi ${arr[0]}`
             res.innerHTML += `<br><br>Somando todos os valores, temos ${soma}`
-            res.innerHTML += `<br><br>A média dos valores, digitados é ${media.toFixed(0)}<br><br>`
+            res.innerHTML += `<br><br>A média dos valores, digitados é ${media.toFixed(1)}<br><br>`
         }
     }
 }

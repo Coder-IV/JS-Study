@@ -71,6 +71,13 @@ input#bot {
     margin-top: -20px;
 }
 
+input#fixNb {
+    background-color: #1f2b9e;
+    width: 70px;
+    font-size: medium;
+    font-weight: 500;
+}
+
 p#res {
     background-color: #010f94;
     border-radius: 20px;
