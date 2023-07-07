@@ -13,21 +13,25 @@
             Analisador de Números
         </h1>
     </header>
+    <div id="alert">
+
+    </div>
     <section>
         <div>
-            <p>
-                Número (entre 1 e 100): <input type="number" name="numero" id="numero"> <input type="button" value="Adicionar" onclick="add()">
+            <p id="p">
+                Adicione números entre 1 e 100: <br> <input type="number" name="numero" id="numero" maxlength="3" oninput="limitarDigitos(this)"><br><br><input type="button" value="Adicionar" onclick="add()" class="botao">
             </p>
         </div>
-        <div id="res">
+        <div>
             <select name="nums" id="nums" size="7">
             </select>
-            <br>
-            <input type="button" value="Finalizar" onclick="finalizar()">
+            <br><br>
+            <input type="button" value="Finalizar" onclick="finalizar()" class="botao">
         </div>
-        <p id="res">
-        </p>
     </section>
+    <p id="res">
+
+    </p>
     <footer>
         <p>&copy;<strong>CursoemVideo</strong></p>
     </footer>

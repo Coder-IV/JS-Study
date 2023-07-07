@@ -1,28 +1,77 @@
 @charset "UTF-8";
 
 body {
-    background-color: blueviolet;
+    background-color: #1709D6;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     color: white;
 }
 
+div#alert {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: #010f94;
+    max-width: 500px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+p#p {
+    font-size: large;
+    font-weight: 600;
+}
+
+input#numero {
+    border-radius: 20px;
+    font-size: larger;
+    width: 50px;
+}
+
 section {
-    background-color: white;
+    color: white;
+    background-color: #010f94;
     border-radius: 15px;
     padding: 15px;
-    width: 500px;
+    max-width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.34);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.262);
+    text-align: center;
+}
+
+.botao {
+    font-size: large;
+    border-radius: 20px;
+    font-weight: 550;
+    height: 35px;
+    color: white;
+    background-color: #0031b7;
+}
+
+p#res {
+    background-color: #010f94;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    max-width: 400px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
 }
 
 select {
-    width: 135px;
+    overflow: hidden;
+    width: 175px;
+    border-radius: 15px;
+    font-size: large;
 }
 
 footer {
